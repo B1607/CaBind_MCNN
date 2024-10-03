@@ -20,7 +20,7 @@ This study introduces CaBind_MCNN, an innovative computational model that levera
 | Independent Test   | 4                | 43                       | 1801                     |
 
 ## Quick Prediction <a name="colab"></a>
-[<img src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/drive/1vNAAfziLS5XYl4zm-uEZD1L28pr_rNbU?usp=sharing)
+[<img src="https://colab.research.google.com/assets/colab-badge.svg">](https://drive.google.com/file/d/1YTG7CMIlTde92mVwsL0Ag-aH2VSgL1Ft/view?usp=sharing)(#https://drive.google.com/file/d/1YTG7CMIlTde92mVwsL0Ag-aH2VSgL1Ft/view?usp=sharing)
 
 ### Step 1: Environment Setup
 open the link of colab notebook and change the runtime type to a device other than CPU.
