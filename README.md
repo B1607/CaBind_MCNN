@@ -40,7 +40,6 @@ MHHHHHHSSRENLYFQGQIKRSARMCGECEACRRTEDCGHCDFCRDMKKFGGPNKIRQKCRLRQCQLRARESYKYFPSS
 >3S8Q1
 GSHMESFLLSKVSFVIKKIRLEKGMTQEDLAYKSNLDRTYISGIERNSRNLTIKSLELIMKGLEVSDVVFFEMLIKEILKHD
 ```
-(Alternatively, you may use our validation dataset, which contains 46 sequences. [⬇️link](https://github.com/B1607/DIRP/blob/main/colab/validation.fasta))
 
 The result will be formatted as follows:
 ```bash
