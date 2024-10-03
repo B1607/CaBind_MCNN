@@ -1,6 +1,7 @@
 # CaBind_MCNN: Identifying Potential Calcium Channel Blocker Targets by Predicting Calcium-Binding Sites in Ion Channels and Ion Transporters Using Protein Language Models and Multi-Scale Feature Extraction
 Yan-Yun Chang, Yu-Chen Liu, Wei-En Jhang, Sin-Siang Wei, Yu-Yen Ou
-
+|[ 🧬&nbsp;Abstract](#abstract) |[📃&nbsp;Dataset](#Dataset) | [ 🚀&nbsp;Quick Prediction With Colab](#colab)|[ 💾&nbsp;Requirements](#Requirements)|[ 📚&nbsp;License](#License)|
+|-------------------------------|-----------------------------|------------------------------------------------|--------------------------------------|---------------------------------|
 ## Abstract <a name="abstract"></a>
 Calcium ions (Ca²⁺) are crucial for various physiological processes, including neurotransmission and cardiac function. Dysregulation of Ca²⁺ homeostasis can lead to serious health conditions such as cardiac arrhythmias and hypertension. Ion channels and transporters play a vital role in maintaining cellular Ca²⁺ balance by facilitating Ca²⁺ transport across cell membranes. Accurate prediction of Ca²⁺ binding sites within these proteins is essential for understanding their function and identifying potential therapeutic targets, particularly for developing novel calcium channel blockers (CCBs).
 
@@ -17,3 +18,35 @@ This study introduces CaBind_MCNN, an innovative computational model that levera
 | Training data      | 21               | 111                      | 22879                    |
 | Testing data       | 6                | 31                       | 3727                     |
 | Independent Test   | 4                | 43                       | 1801                     |
+
+##Quick Prediction <a name="colab"></a>
+[<img src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/drive/1vNAAfziLS5XYl4zm-uEZD1L28pr_rNbU?usp=sharing)
+
+### Step 1: Environment Setup
+open the link of colab notebook and change the runtime type to a device other than CPU.
+
+### Step 2: Excute the program
+This Colab notebook will automatically import all necessary dependencies and download the required files.
+
+### Step 3: Submit your fasta file and wait for the Prediction result !
+
+Upload your own FASTA file to run the prediction.
+The format of the FASTA file will be as follows:
+```bash
+>4JBM0
+MDPLVVTVLKAINPFECETQEGRQEIFHATVATETDFFFVKVLNAQFKDKFIPKRTIKISNYLWHSNFMEVTSSSVVVDVESNHEVPNNVVKRARETPRISKLKIQPCGTIVNGLFKVQKITEEKDRVLYGIHDKTGTMEVLVLGNPSKTKCEEGDKIRLTFFEVSKNGVKIQLKSGPCSFFKVIKAAKPKTD
+>3QMD0
+MHHHHHHSSRENLYFQGQIKRSARMCGECEACRRTEDCGHCDFCRDMKKFGGPNKIRQKCRLRQCQLRARESYKYFPSS
+>3S8Q1
+GSHMESFLLSKVSFVIKKIRLEKGMTQEDLAYKSNLDRTYISGIERNSRNLTIKSLELIMKGLEVSDVVFFEMLIKEILKHD
+```
+(Alternatively, you may use our validation dataset, which contains 46 sequences. [⬇️link](https://github.com/B1607/DIRP/blob/main/colab/validation.fasta))
+
+The result will be formatted as follows:
+```bash
+Fasta     :  >4JBM0
+Amino acid:  MDPLVVTVLKAINPFECETQEGRQEIFHATVATETDFFFVKVLNAQFKDKFIPKRTIKISNYLWHSNFMEVTSSSVVVDVESNHEVPNNVVKRARETPRISKLKIQPCGTIVNGLFKVQKITEEKDRVLYGIHDKTGTMEVLVLGNPSKTKCEEGDKIRLTFFEVSKNGVKIQLKSGPCSFFKVIKAAKPKTD
+Prediction:  0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100110111000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000
+```
+1 indicates the amino acid is predicted to be a DNA interacting residue.<br>
+0 indicates the amino acid is predicted to be a non-DNA interacting residue.
