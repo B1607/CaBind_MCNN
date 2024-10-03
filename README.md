@@ -50,3 +50,17 @@ Prediction:  0000000000000000000000000000000000000000000000000000000000000000000
 ```
 1 indicates the amino acid is predicted to be a DNA interacting residue.<br>
 0 indicates the amino acid is predicted to be a non-DNA interacting residue.
+## 💾&nbsp;Requirements <a name="requirement"></a>
+```bash
+h5py==3.11.0
+tqdm==4.66.4
+numpy==1.26.4
+scikit-learn==1.4.2
+tensorflow==2.10.1
+transformers==4.40.1
+torch==2.3.0+cu118
+fair-esm==2.0.0
+```
+
+## 📚&nbsp;License <a name=" License"></a>
+Licensed under the Academic Free License version 3.0
