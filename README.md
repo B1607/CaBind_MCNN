@@ -5,7 +5,7 @@ Yan-Yun Chang, Yu-Chen Liu, Wei-En Jhang, Sin-Siang Wei, Yu-Yen Ou
 ## 🎇Abstract <a name="abstract"></a>
 Calcium ions (Ca²⁺) are crucial for various physiological processes, including neurotransmission and cardiac function. Dysregulation of Ca²⁺ homeostasis can lead to serious health conditions such as cardiac arrhythmias and hypertension. Ion channels and transporters play a vital role in maintaining cellular Ca²⁺ balance by facilitating Ca²⁺ transport across cell membranes. Accurate prediction of Ca²⁺ binding sites within these proteins is essential for understanding their function and identifying potential therapeutic targets, particularly for developing novel calcium channel blockers (CCBs).
 
-This study introduces CaBind_MCNN, an innovative computational model that leverages pre-trained protein language models (PLMs) and a multi-scale feature extraction approach to predict Ca²⁺ binding sites in ion channels and transporter proteins. Our method integrates embeddings from the ProtTrans PLM with a convolutional neural network (CNN)-based multi-window scanning approach, capable of capturing diverse sequence features relevant to Ca²⁺ binding. The model, trained on a curated dataset of 27 calcium-binding protein sequences, achieves high accuracy with an area under the curve (AUC) of 0.9886, significantly outperforming some existing methods. These results demonstrate the potential of CaBind_MCNN to enhance drug discovery efforts by identifying potential CCB targets and advancing the development of novel therapies for calcium-related disorders.
+This study introduces CaBind_MCNN, an innovative computational model that leverages pre-trained protein language models (PLMs) and a multi-scale feature extraction approach to predict Ca²⁺ binding sites in ion channels and transporter proteins. Our method integrates embeddings from the ProtTrans PLM with a convolutional neural network (CNN)-based multi-window scanning approach, capable of capturing diverse sequence features relevant to Ca²⁺ binding. The model, trained on a curated dataset of 27 calcium-binding protein sequences, achieves high accuracy with an area under the curve (AUC) of 0.9886, significantly outperforming some existing methods. These results demonstrate the potential of CaBind_MCNN to enhance drug discovery efforts by identifying potential CCBs targets and advancing the development of novel therapies for calcium-related disorders. 
 
 <br>
 
@@ -17,7 +17,7 @@ This study introduces CaBind_MCNN, an innovative computational model that levera
 |--------------------|------------------|--------------------------|--------------------------|
 | Training data      | 21               | 111                      | 22879                    |
 | Testing data       | 6                | 31                       | 3727                     |
-| Independent Test   | 4                | 43                       | 1801                     |
+| Calcium Channel from ChEMBL   | 33    | 230                      | 37980                     |
 
 ## 🚀Quick Prediction <a name="colab"></a>
 [<img src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/drive/1xW6k05tAwPRp6hSLBOqYJskjSWTi-Fp_?usp=sharing)<br>
@@ -39,7 +39,7 @@ MGSRASTLLRDEELEEIKKETGFSHSQITRLYSRFTSLDKGENGTLSREDFQRIPELAINPLGDRIINAFFSEGEDQVNF
 >Q9JJ69
 MRGQGRKESLSDSRDLDGSYDQLTGHPPGPSKKALKQRFLKLLPCCGPQALPSVSETLAAPASLRPHRPRPLDPDSVEDEFELSTVCHRPEGLEQLQEQTKFTRRELQVLYRGFKNECPSGIVNEENFKQIYSQFFPQGDSSNYATFLFNAFDTNHDGSVSFEDFVAGLSVILRGTIDDRLNWAFNLYDLNKDGCITKEEMLDIMKSIYDMMGKYTYPALREEAPREHVESFFQKMDRNKDGVVTIEEFIESCQQDENIMRSMQLFDNVI
 ```
-(Alternatively, you may use our dataset, which contains both Testing and Antiporter. [⬇️link](https://github.com/B1607/CaBind_MCNN/tree/31fe7416909e21312b3d8f5ede6fc0520280479f/Colab))<br>
+(Alternatively, you may use our dataset, which contains both Testing and Calcium Channel. [⬇️link](https://github.com/B1607/CaBind_MCNN/tree/31fe7416909e21312b3d8f5ede6fc0520280479f/Colab))<br>
 The result will be formatted as follows:
 ```bash
 Fasta     :  >P61022
