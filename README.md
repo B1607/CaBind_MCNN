@@ -74,15 +74,29 @@ cd CaBind_MCNN
 ### Step 3: Generate the necessary data for training
 #### Step 3.1: Get different feature of dataset
 ```bash
-cd DIRP
+cd data
+
+#RUN
+python get_ProtTrans.py -in "Your FASTA file folder" -out "The destination folder of your output"
+
+#For example:
+#python get_ProtTrans.py -in ./fasta/train -out ./ProtTrans/train"
+```
+#### Step 3.2: Get the package of dataset
+```bash
+cd dataset
+
+#RUN
+python get_dataset.py -in "Your data feature Folder" -label "Your binding label folder" -out "The destination folder of your output"  -dt "datatype" -w "Setting of Sequence length." 
+
+#For example:
+#python get_dataset.py -in ../data/ProtTrans/train -label ../data/label/train -out ./Train -dt .prottrans -w 6
 ```
 
-### Step 3: Navigate to the "code" folder
+### Step 4: Navigate to the "code" folder and Run the code!
 ```bash
 cd DIRP
-```
-### Step 4: Run the Training code
-```bash
+
 python MCNN_npy.py
 """
 you can also change the arguments to training model by your self
