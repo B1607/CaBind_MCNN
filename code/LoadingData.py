@@ -17,8 +17,8 @@ def MCNN_data_load():
     path_data_testing = "../dataset/test/data.npy"
     path_label_testing = "../dataset/test/label.npy"
     
-    path_data_antiporter = "../dataset/antiporter/data.npy"
-    path_label_antiporter = "../dataset/antiporter/label.npy"
+    path_data_antiporter = "../dataset/cchannel/data.npy"
+    path_label_antiporter = "../dataset/cchannel/label.npy"
 
     
     x_train,y_train=data_load(path_data_training,path_label_training)
