@@ -48,6 +48,63 @@ Prediction:  0000000000000000000000000000000000000000000000000000000000000000000
 ```
 1 indicates the amino acid is predicted to be a Ca2+ interacting residue.<br>
 0 indicates the amino acid is predicted to be a non-Ca2+ interacting residue.
+
+## 💡&nbsp;MCNN Training <a name="train"></a>
+
+### Step 1: Environment Setup
+
+We recommend using Anaconda to manage the project environment. You can create the necessary environment using the following command:
+```bash
+conda env create -n MCNN_Ca -f environment.yml
+```
+Activate the conda environment
+```bash
+conda activate MCNN_Ca
+```
+### Step 2: Download the GitHub Repository and Dataset
+
+Clone the GitHub repository using the following command:
+```bash
+git clone https://github.com/B1607/CaBind_MCNN.git
+```
+Navigate to the repository folder:
+```bash
+cd CaBind_MCNN
+```
+### Step 3: Generate the necessary data for training
+#### Step 3.1: Get different feature of dataset
+```bash
+cd DIRP
+```
+
+### Step 3: Navigate to the "code" folder
+```bash
+cd DIRP
+```
+### Step 4: Run the Training code
+```bash
+python MCNN_npy.py
+"""
+you can also change the arguments to training model by your self
+-n_fil , --num_filter
+      The number of filters in the convolutional layer.
+-n_hid , --num_hidden
+      The number of hidden units in the dense layer.
+-bs , --batch_size
+      The batch size for training the model.
+-ws , --window_sizes
+      The window sizes for convolutional filters.
+-vm , --validation_mode
+      The validation mode. Options are 'cross', 'independent'.
+-d , --data_type,
+      The type of data. Options are 'ProtTrans', 'tape', 'esm2'
+-n_feat , --num_feature
+      The number of data feature dimensions. 1024 for ProtTrans, 768 for tape, 1280 for esm2.
+-length , --n_length
+      The length of the input sequence in residues (amino acids).
+"""
+```
+
 ## 💾&nbsp;Requirements <a name="requirement"></a>
 ```bash
 h5py==3.11.0
