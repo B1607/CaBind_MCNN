@@ -100,6 +100,9 @@ cd DIRP
 Run the Jupyter notebook:
 ```bash
 MCNN_Ca.ipynb
+
+#Please check the setting of path in LoadingData.py
+#And also check the parameter of model training in MCNN_Ca.ipynb
 ```
 
 
