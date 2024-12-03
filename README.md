@@ -1,6 +1,6 @@
 # CaBind_MCNN: Identifying Potential Calcium Channel Blocker Targets by Predicting Calcium-Binding Sites in Ion Channels and Ion Transporters Using Protein Language Models and Multi-Scale Feature Extraction
 Yan-Yun Chang, Yu-Chen Liu, Wei-En Jhang, Sin-Siang Wei, Yu-Yen Ou
-|[ 🎇&nbsp;Abstract](#abstract) |[📃&nbsp;Dataset](#Dataset) | [ 🚀&nbsp;Quick Prediction ](#colab)|[ 💾&nbsp;Requirements](#requirement)|[ 📚&nbsp;License](#License)|
+|[ 🎇&nbsp;Abstract](#abstract) |[📃&nbsp;Dataset](#Dataset) | [ 🚀&nbsp;Quick Prediction ](#colab)|[ 💡&nbsp;MCNN Training ](#train)|[ 💾&nbsp;Requirements](#requirement)|[ 📚&nbsp;License](#License)|
 |-------------------------------|-----------------------------|------------------------------------------------|--------------------------------------|---------------------------------|
 ## 🎇Abstract <a name="abstract"></a>
 Calcium ions (Ca²⁺) are crucial for various physiological processes, including neurotransmission and cardiac function. Dysregulation of Ca²⁺ homeostasis can lead to serious health conditions such as cardiac arrhythmias and hypertension. Ion channels and transporters play a vital role in maintaining cellular Ca²⁺ balance by facilitating Ca²⁺ transport across cell membranes. Accurate prediction of Ca²⁺ binding sites within these proteins is essential for understanding their function and identifying potential therapeutic targets, particularly for developing novel calcium channel blockers (CCBs).
@@ -118,6 +118,11 @@ you can also change the arguments to training model by your self
       The length of the input sequence in residues (amino acids).
 """
 ```
+Alternatively, utilize the Jupyter notebook:
+```bash
+main.ipynb
+```
+
 
 ## 💾&nbsp;Requirements <a name="requirement"></a>
 ```bash
