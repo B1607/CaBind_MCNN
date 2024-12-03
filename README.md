@@ -96,31 +96,10 @@ python get_dataset.py -in "Your data feature Folder" -label "Your binding label 
 ### Step 4: Navigate to the "code" folder and Run the code!
 ```bash
 cd DIRP
-
-python MCNN_npy.py
-"""
-you can also change the arguments to training model by your self
--n_fil , --num_filter
-      The number of filters in the convolutional layer.
--n_hid , --num_hidden
-      The number of hidden units in the dense layer.
--bs , --batch_size
-      The batch size for training the model.
--ws , --window_sizes
-      The window sizes for convolutional filters.
--vm , --validation_mode
-      The validation mode. Options are 'cross', 'independent'.
--d , --data_type,
-      The type of data. Options are 'ProtTrans', 'tape', 'esm2'
--n_feat , --num_feature
-      The number of data feature dimensions. 1024 for ProtTrans, 768 for tape, 1280 for esm2.
--length , --n_length
-      The length of the input sequence in residues (amino acids).
-"""
 ```
-Alternatively, utilize the Jupyter notebook:
+Run the Jupyter notebook:
 ```bash
-main.ipynb
+MCNN_Ca.ipynb
 ```
 
 
