@@ -17,17 +17,17 @@ def MCNN_data_load():
     path_data_testing = "../dataset/test/data.npy"
     path_label_testing = "../dataset/test/label.npy"
     
-    path_data_antiporter = "../dataset/cchannel/data.npy"
-    path_label_antiporter = "../dataset/cchannel/label.npy"
+    path_data_cchannel = "../dataset/cchannel/data.npy"
+    path_label_cchannel = "../dataset/cchannel/label.npy"
 
     
     x_train,y_train=data_load(path_data_training,path_label_training)
     
     x_test,y_test=data_load(path_data_testing,path_label_testing)
     
-    x_antiporter,y_antiporter=data_load(path_data_antiporter,path_label_antiporter)
+    x_cchannel,y_cchannel=data_load(path_data_cchannel,path_label_cchannel)
     
-    return(x_train,y_train,x_test,y_test,x_antiporter,y_antiporter)
+    return(x_train,y_train,x_test,y_test,x_cchannel,y_cchannel)
 
 def data_load(DATA,LABEL):
     data=np.load(DATA)
